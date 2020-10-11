@@ -32,7 +32,7 @@ export default class EvenAndOdd extends Component {
     //     this.setState({ evenArray: evens, oddArray: odds });
     //   }
     
-    // found the parseInt on MDN and made it work with creating numbers though it would make a double of the first number input every time. I copied the solution code and it worked perfectly but when re-typing the solution code I was still getting the double number error. Found a fix as formatted below, not works why it works but it does.
+    // found the parseInt on MDN and made it work with creating numbers though it would make a double of the first number input every time. I copied the solution code and it worked perfectly but when re-typing the solution code I was still getting the double number error. Found a fix as formatted below, not sure works why it works but it does.
     assignEvenAndOdds(userInput){
         let arr = userInput.split(`,`);
         let evens = [];

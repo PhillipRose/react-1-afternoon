@@ -17,6 +17,17 @@ this.setState({userInput: val})
     }
 
 checkPalindrome(userInput) {
+    let forwards = userInput;
+    let backwards = userInput;
+    backwards = backwards.split('');
+    backwards = backwards.reverse();
+    backwards = backwards.join('');
+
+    if ( forwards === backwards ) {
+      this.setState({ palindrome: 'true' });
+    } else {
+      this.setState({ palindrome: 'false' });
+    }
 
 }
 
